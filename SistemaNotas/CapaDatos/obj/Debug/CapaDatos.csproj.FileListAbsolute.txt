@@ -1,0 +1,9 @@
+C:\Users\MSI GT683\source\repos\SistemaNotas\CapaDatos\bin\Debug\CapaDatos.dll
+C:\Users\MSI GT683\source\repos\SistemaNotas\CapaDatos\bin\Debug\CapaDatos.pdb
+C:\Users\MSI GT683\source\repos\SistemaNotas\CapaDatos\bin\Debug\CapaEntidades.dll
+C:\Users\MSI GT683\source\repos\SistemaNotas\CapaDatos\bin\Debug\CapaEntidades.pdb
+C:\Users\MSI GT683\source\repos\SistemaNotas\CapaDatos\obj\Debug\CapaDatos.csprojResolveAssemblyReference.cache
+C:\Users\MSI GT683\source\repos\SistemaNotas\CapaDatos\obj\Debug\CapaDatos.csproj.CoreCompileInputs.cache
+C:\Users\MSI GT683\source\repos\SistemaNotas\CapaDatos\obj\Debug\CapaDatos.csproj.CopyComplete
+C:\Users\MSI GT683\source\repos\SistemaNotas\CapaDatos\obj\Debug\CapaDatos.dll
+C:\Users\MSI GT683\source\repos\SistemaNotas\CapaDatos\obj\Debug\CapaDatos.pdb

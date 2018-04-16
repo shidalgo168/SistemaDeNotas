@@ -1,0 +1,58 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <link href="/App_Themes/TemaMaster/estilos.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div id="abrigo_general">
+        <div id="banner"></div>
+        <div id="contenido_izquierdo">
+            <h2>Periodos</h2>
+            <%
+                List<CapaEntidades.entPeriodo> lista = CapaNegocio.negPeriodo.ListarPeriodos();
+                CapaEntidades.entUsuario profesor = (CapaEntidades.entUsuario)Session["usuario"];
+                if (lista != null)
+                {
+                    foreach (CapaEntidades.entPeriodo obj in lista)
+                    {
+                        hplperiodo.Text = obj.FechaInicio.Day.ToString() + "/" + obj.FechaInicio.Month.ToString() + "/" + obj.FechaInicio.Year.ToString() + " - " + obj.FechaFin.Day.ToString() + "/" + obj.FechaFin.Month.ToString() + "/" + obj.FechaFin.Year.ToString();
+                        hplperiodo.NavigateUrl = "Forms/frmPrincipal.aspx?idProf="+profesor.id+"&" + "per=" + obj.Id;
+
+
+                %>
+                        
+                        <div class="etiqueta">
+                            <asp:HyperLink ID="hplperiodo" runat="server"></asp:HyperLink>
+
+                        </div>
+                        <%
+                    }
+                }
+            %>
+           
+        </div>
+        <div id="contenido_derecho">
+            <div style=" width: 730px">
+                <div style=" text-align: right; float: left; width: 580px; font-size: medium;">Nombre de usuario:
+                    <asp:Label ID="nombreUsuario" runat="server" Text=""></asp:Label>
+                </div>
+                <div style="float:left; text-align: right; width:130px">
+                    <asp:LinkButton ID="lbtlogout" runat="server" OnClick="lbtlogout_Click" Font-Size="Medium">Logout</asp:LinkButton>
+                </div>
+            </div>
+            <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+            </asp:ContentPlaceHolder>
+        </div>
+    </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,11 @@
+C:\Users\MSI GT683\source\repos\SistemaNotas\CapaNegocio\bin\Debug\CapaNegocio.dll
+C:\Users\MSI GT683\source\repos\SistemaNotas\CapaNegocio\bin\Debug\CapaNegocio.pdb
+C:\Users\MSI GT683\source\repos\SistemaNotas\CapaNegocio\bin\Debug\CapaEntidades.dll
+C:\Users\MSI GT683\source\repos\SistemaNotas\CapaNegocio\bin\Debug\CapaEntidades.pdb
+C:\Users\MSI GT683\source\repos\SistemaNotas\CapaNegocio\obj\Debug\CapaNegocio.csprojResolveAssemblyReference.cache
+C:\Users\MSI GT683\source\repos\SistemaNotas\CapaNegocio\obj\Debug\CapaNegocio.csproj.CoreCompileInputs.cache
+C:\Users\MSI GT683\source\repos\SistemaNotas\CapaNegocio\obj\Debug\CapaNegocio.csproj.CopyComplete
+C:\Users\MSI GT683\source\repos\SistemaNotas\CapaNegocio\obj\Debug\CapaNegocio.dll
+C:\Users\MSI GT683\source\repos\SistemaNotas\CapaNegocio\obj\Debug\CapaNegocio.pdb
+C:\Users\MSI GT683\source\repos\SistemaNotas\CapaNegocio\bin\Debug\CapaDatos.dll
+C:\Users\MSI GT683\source\repos\SistemaNotas\CapaNegocio\bin\Debug\CapaDatos.pdb

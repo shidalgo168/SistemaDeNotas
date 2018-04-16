@@ -1,0 +1,6 @@
+C:\Users\MSI GT683\source\repos\SistemaNotas\CapaEntidades\bin\Debug\CapaEntidades.dll
+C:\Users\MSI GT683\source\repos\SistemaNotas\CapaEntidades\bin\Debug\CapaEntidades.pdb
+C:\Users\MSI GT683\source\repos\SistemaNotas\CapaEntidades\obj\Debug\CapaEntidades.csprojResolveAssemblyReference.cache
+C:\Users\MSI GT683\source\repos\SistemaNotas\CapaEntidades\obj\Debug\CapaEntidades.csproj.CoreCompileInputs.cache
+C:\Users\MSI GT683\source\repos\SistemaNotas\CapaEntidades\obj\Debug\CapaEntidades.dll
+C:\Users\MSI GT683\source\repos\SistemaNotas\CapaEntidades\obj\Debug\CapaEntidades.pdb
