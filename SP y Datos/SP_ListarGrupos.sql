@@ -1,12 +1,13 @@
 USE [SistemaDeNotas]
 GO
 
-/****** Object:  StoredProcedure [dbo].[ListarGrupos]    Script Date: 15/4/2018 8:13:42 p. m. ******/
+/****** Object:  StoredProcedure [dbo].[ListarGrupos]    Script Date: 19/4/2018 11:59:02 p. m. ******/
 SET ANSI_NULLS ON
 GO
 
 SET QUOTED_IDENTIFIER ON
 GO
+
 
 
 -- =============================================

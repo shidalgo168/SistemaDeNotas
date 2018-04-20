@@ -1,23 +1,21 @@
 USE [SistemaDeNotas]
 GO
 
-/****** Object:  StoredProcedure [dbo].[ListarEvaluaciones]    Script Date: 19/4/2018 11:58:10 p. m. ******/
+/****** Object:  StoredProcedure [dbo].[ListarEvalDinamicas]    Script Date: 19/4/2018 11:57:33 p. m. ******/
 SET ANSI_NULLS ON
 GO
 
 SET QUOTED_IDENTIFIER ON
 GO
 
-
 -- =============================================
 -- Author:		<Author,,Name>
 -- Create date: <Create Date,,>
 -- Description:	<Description,,>
 -- =============================================
-CREATE PROCEDURE [dbo].[ListarEvaluaciones]
+CREATE PROCEDURE [dbo].[ListarEvalDinamicas] 
 	-- Add the parameters for the stored procedure here
-	@idGxE int
-	
+	@idGrupo int
 AS
 BEGIN
 	-- SET NOCOUNT ON added to prevent extra result sets from
@@ -25,12 +23,9 @@ BEGIN
 	SET NOCOUNT ON;
 
     -- Insert statements for procedure here
-	
-	SELECT SE.FK_GrupoxEst, SE.Nota, E.id, E.Nombre, E.FechaAplicacion,E.ValorPorcIndiv, E.Descripcion
-	FROM Eval_x_Est SE        
-	INNER JOIN Evaluacion E ON (E.id = SE.FK_Evaluacion)
-	WHERE SE.FK_GrupoxEst =@idGxE
-
+	SELECT GE.id, r.Nombre
+	FROM Rubro R
+	INNER JOIN Grupo_x_Rubro GE ON R.id = GE.FK_Rubro and GE.EsFijo=0 AND GE.FK_Grupo=@idGrupo
 END
 GO
 

@@ -1,12 +1,13 @@
 USE [SistemaDeNotas]
 GO
 
-/****** Object:  StoredProcedure [dbo].[VerificarUsuario]    Script Date: 15/4/2018 8:14:44 p. m. ******/
+/****** Object:  StoredProcedure [dbo].[VerificarUsuario]    Script Date: 20/4/2018 12:00:00 a. m. ******/
 SET ANSI_NULLS ON
 GO
 
 SET QUOTED_IDENTIFIER ON
 GO
+
 
 
 -- =============================================
