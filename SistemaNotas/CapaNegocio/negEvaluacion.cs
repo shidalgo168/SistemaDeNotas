@@ -14,5 +14,13 @@ namespace CapaNegocio
         {
             return daoEvaluacion.ListarEvaluaciones(idEst);
         }
+        public static List<entEvaluacion> ListarEvalDinamicas(int idGrupo)
+        {
+            return daoEvaluacion.ListarEvalDinamicas(idGrupo);
+        }
+        public static DateTime AgregarEvaluacion(entEvaluacion obj)
+        {
+            return daoEvaluacion.AgregarEvaluacion(obj);
+        }
     }
 }

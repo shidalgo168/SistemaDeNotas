@@ -38,7 +38,6 @@ namespace CapaDatos
                     p.Telefono = Convert.ToInt32(dr["Telefono"]);
                     p.NotaAcumulada = Convert.ToDouble(dr["NotaAcumulada"]);
                     p.FK_EstadoEst = Convert.ToInt32(dr["FK_EstadoEst"]);
-                    p.FK_Estudiante = Convert.ToInt32(dr["FK_Estudiante"]);
                     p.FK_Grupo = Convert.ToInt32(dr["FK_Grupo"]);
                     p.FK_Periodo = Convert.ToInt32(dr["FK_Periodo"]);
                     p.FK_Profesor = Convert.ToInt32(dr["FK_Profesor"]);

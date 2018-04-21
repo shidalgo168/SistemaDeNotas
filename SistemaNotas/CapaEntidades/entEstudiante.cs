@@ -17,7 +17,6 @@ namespace CapaEntidades
         public int Telefono { get; set; }
         public double NotaAcumulada { get; set; }
         public int FK_Grupo { get; set; }
-        public int FK_Estudiante { get; set; }
         public int FK_EstadoEst { get; set; }
         public int FK_Periodo { get; set; }
         public int FK_Profesor { get; set; }

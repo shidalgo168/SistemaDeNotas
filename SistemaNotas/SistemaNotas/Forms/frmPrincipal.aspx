@@ -32,8 +32,12 @@
         <Columns>
             <asp:BoundField DataField="id" HeaderText="id" />
             <asp:BoundField DataField="FK_GrupoxEst" HeaderText="FK_GrupoxEst" />
-            <asp:BoundField DataField="FK_Evaluacion" HeaderText="FK_Evaluacion" />
+            <asp:BoundField DataField="Nombre" HeaderText="Nombre" />
             <asp:BoundField DataField="Nota" HeaderText="Nota" />
+            <asp:BoundField DataField="ValorPorcIndiv" HeaderText="ValorPorcIndiv" />
+            <asp:BoundField DataField="FechaAplicacion" HeaderText="FechaAplicacion" />
+            <asp:BoundField DataField="Descripcion" HeaderText="Descripcion" />
+            <asp:CommandField SelectText="Modificar" ShowEditButton="True" />
         </Columns>
         <FooterStyle BackColor="#CCCCCC" />
         <HeaderStyle BackColor="Black" Font-Bold="True" ForeColor="White" />
@@ -68,5 +72,7 @@
     <br />
 
     <asp:Button ID="btnAtras" runat="server" Text="Atrás" OnClick="btnAtras_Click" />
+    <asp:PlaceHolder ID="PlaceHolder1" runat="server"></asp:PlaceHolder>
+    <asp:Button ID="btnAgregarEval" runat="server" Text="Agregar Evaluación" Visible="false" OnClick="btnAgregarEval_Click"/>
 </asp:Content>
 

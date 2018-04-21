@@ -45,6 +45,7 @@ public partial class Forms_frmPincipal : System.Web.UI.Page
                         }
                         grvEstudiantes.DataSource = negEstudiante.ListarEstudiantes(gru);
                         grvEstudiantes.DataBind();
+                        btnAgregarEval.Visible = true;
                     }
                 }
                 else
@@ -80,7 +81,8 @@ public partial class Forms_frmPincipal : System.Web.UI.Page
                     if (Request.QueryString["est"] != null)
                     {
                         int est = Convert.ToInt32(Request.QueryString["est"]);
-                        Response.Redirect("frmPrincipal.aspx?idProf=" + prof + "&" + "per=" + per + "&" + "gru=" + gru);
+                        Response.Redirect("frmPrincipal.aspx?idProf=" + prof + "&per=" + per + "&gru=" + gru);
+                        btnAgregarEval.Visible = false;
                     }
                     else
                     {
@@ -89,5 +91,13 @@ public partial class Forms_frmPincipal : System.Web.UI.Page
                 }
             }
         }
+    }
+
+    protected void btnAgregarEval_Click(object sender, EventArgs e)
+    {
+        int prof = Convert.ToInt32(Request.QueryString["idProf"]);
+        int per = Convert.ToInt32(Request.QueryString["per"]);
+        int gru = Convert.ToInt32(Request.QueryString["gru"]);
+        Response.Redirect("frmEval.aspx?idProf=" + prof + "&per=" + per + "&gru=" + gru);
     }
 }
